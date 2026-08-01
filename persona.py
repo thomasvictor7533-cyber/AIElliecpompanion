@@ -54,8 +54,42 @@ def wants_image(text: str) -> bool:
     return has_noun and has_verb
 
 
-ELLIE_APPEARANCE = (
-    "young adult woman in her mid-20s, warm smile, brown wavy hair, "
-    "casual cozy outfit, soft natural lighting, photorealistic, "
-    "phone selfie style"
-)
+# Ellie's photos are randomly assembled from these pools each time, so she
+# sends varied, cute-styled pictures instead of one repeated look.
+# Edit any list below to change the range of looks/settings she can have.
+
+ELLIE_CORE = "young adult woman in her mid-20s, cute, warm genuine smile"
+
+ELLIE_LOOKS = [
+    "brown wavy hair, dimples",
+    "soft pink hair in loose waves, freckles",
+    "black hair in space buns, big bright eyes",
+    "blonde hair in a messy bun, rosy cheeks",
+    "auburn hair with soft curls, button nose",
+    "dark hair with cute bangs, soft smile",
+]
+
+ELLIE_OUTFITS = [
+    "cozy oversized sweater",
+    "cute sundress",
+    "pastel hoodie",
+    "denim jacket over a cute top",
+    "soft cardigan",
+    "casual cute pajamas",
+]
+
+ELLIE_SETTINGS = [
+    "sitting by a sunlit window",
+    "at a cozy cafe table",
+    "in a flower garden",
+    "curled up on a couch with soft blankets",
+    "walking in a park on a sunny day",
+    "in a cute bedroom with fairy lights",
+]
+
+ELLIE_STYLE = [
+    "phone selfie style, soft natural lighting, photorealistic",
+    "golden hour lighting, photorealistic, candid feel",
+    "soft aesthetic photo, pastel tones, photorealistic",
+    "warm cozy lighting, photorealistic, cute vibe",
+]
