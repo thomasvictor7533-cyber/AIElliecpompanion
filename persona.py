@@ -54,42 +54,39 @@ def wants_image(text: str) -> bool:
     return has_noun and has_verb
 
 
-# Ellie's photos are randomly assembled from these pools each time, so she
-# sends varied, cute-styled pictures instead of one repeated look.
-# Edit any list below to change the range of looks/settings she can have.
+# Ellie's photos are randomly assembled from these pools each time, matching
+# a warm, cozy "sweet girlfriend selfie" aesthetic — soft glam makeup, wavy
+# hair with bangs, warm ambient lighting, cozy loungewear.
+# Edit any list below to adjust the look.
 
-ELLIE_CORE = "young adult woman in her mid-20s, cute, warm genuine smile"
+ELLIE_CORE = (
+    "young adult East Asian woman in her mid-20s, soft glam makeup, "
+    "warm gentle smile, dewy skin"
+)
 
 ELLIE_LOOKS = [
-    "brown wavy hair, dimples",
-    "soft pink hair in loose waves, freckles",
-    "black hair in space buns, big bright eyes",
-    "blonde hair in a messy bun, rosy cheeks",
-    "auburn hair with soft curls, button nose",
-    "dark hair with cute bangs, soft smile",
+    "long wavy dark brown hair with soft curtain bangs",
+    "long wavy black hair with side-swept bangs",
+    "soft brown hair in loose waves framing the face",
+    "dark hair with wispy bangs, soft eyeliner",
 ]
 
 ELLIE_OUTFITS = [
-    "cozy oversized sweater",
-    "cute sundress",
-    "pastel hoodie",
-    "denim jacket over a cute top",
-    "soft cardigan",
-    "casual cute pajamas",
+    "cozy off-shoulder cream sweater",
+    "soft oversized knit sweater",
+    "cozy pastel cardigan",
+    "warm loungewear top",
 ]
 
 ELLIE_SETTINGS = [
-    "sitting by a sunlit window",
-    "at a cozy cafe table",
-    "in a flower garden",
-    "curled up on a couch with soft blankets",
-    "walking in a park on a sunny day",
-    "in a cute bedroom with fairy lights",
+    "cozy bedroom with warm fairy lights and soft pillows",
+    "cozy room with a neon sign glowing softly in the background",
+    "sitting close to camera with warm string lights blurred behind",
+    "cozy corner with soft plushies and warm ambient light",
 ]
 
 ELLIE_STYLE = [
-    "phone selfie style, soft natural lighting, photorealistic",
-    "golden hour lighting, photorealistic, candid feel",
-    "soft aesthetic photo, pastel tones, photorealistic",
-    "warm cozy lighting, photorealistic, cute vibe",
+    "warm cozy ambient lighting, soft focus background, phone selfie style, photorealistic, intimate close-up",
+    "warm golden indoor lighting, soft bokeh background, photorealistic, close selfie angle",
+    "soft romantic lighting, warm tones, photorealistic, tender expression, close-up selfie",
 ]
