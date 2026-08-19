@@ -3,6 +3,7 @@ Configuration loader for Ellie — Companion Bot.
 All secrets/settings come from environment variables (.env locally,
 or Railway's "Variables" tab in production).
 """
+
 import os
 from dotenv import load_dotenv
 
@@ -12,8 +13,8 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 
 # Groq powers both the chat brain and the free Whisper transcription
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_CHAT_MODEL = os.getenv("GROQ_CHAT_MODEL", "llama-3.3-70b-versatile")
-GROQ_VISION_MODEL = os.getenv("GROQ_VISION_MODEL", "llama-4-scout-17b-16e-instruct")
+GROQ_CHAT_MODEL = os.getenv("GROQ_CHAT_MODEL", "openai/gpt-oss-120b")
+GROQ_VISION_MODEL = os.getenv("GROQ_VISION_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
 GROQ_WHISPER_MODEL = os.getenv("GROQ_WHISPER_MODEL", "whisper-large-v3-turbo")
 
 # edge-tts voice for Ellie's spoken replies (free, no key needed)
